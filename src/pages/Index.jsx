@@ -1,8 +1,19 @@
 import React, { useState } from "react";
-import { Box, Heading, Input, Button, Text, VStack, HStack, IconButton, Spacer, useToast } from "@chakra-ui/react";
+import { Box, Container, Heading, Input, Button, Text, VStack, HStack, IconButton, Spacer, useToast } from "@chakra-ui/react";
 import { FaPlus, FaTrash } from "react-icons/fa";
+import Navigation from "../components/Navigation";
+import Footer from "../components/Footer";
 
 const Index = () => {
+  return (
+    <>
+      <Navigation />
+      <Container maxWidth="600px" marginTop={8} marginBottom={8}>
+        {}
+      </Container>
+      <Footer />
+    </>
+  );
   const [todo, setTodo] = useState("");
   const [todos, setTodos] = useState([]);
   const toast = useToast();
